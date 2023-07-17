@@ -1,0 +1,19 @@
+{
+  "name": "sandbox-nestjs",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "projects/*"
+    ]
+  },
+  "scripts": {
+    "build-all": "yarn lerna run build"
+  },
+  "author": "João Vitor <jvmdo2008@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^7.1.4"
+  }
+}
