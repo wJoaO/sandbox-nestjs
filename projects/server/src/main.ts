@@ -6,6 +6,7 @@ import { JOBS_QUEUE_MICROSERVICE_CONSUMER } from './config';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  app.enableCors();
   app.connectMicroservice<MicroserviceOptions>(JOBS_QUEUE_MICROSERVICE_CONSUMER);
 
   await app.startAllMicroservices();
