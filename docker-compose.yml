@@ -4,11 +4,13 @@ services:
     image: rabbitmq:3-management-alpine
     container_name: 'rabbitmq'
     ports:
-        - 5672:5672
         - 15672:15672
-    networks:
-        - rabbitmq_go_net
-
-networks:
-  rabbitmq_go_net:
-    driver: bridge
+        - 5672:5672
+  api:
+    build:
+      context: ./projects/server
+      dockerfile: Dockerfile
+    ports:
+        - 3000:3000
+    depends_on:
+      - rabbitmq

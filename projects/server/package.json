@@ -71,7 +71,9 @@
   "workspaces": {
     "nohoist": [
       "@nestjs/common",
-      "@nestjs/core"
+      "@nestjs/core",
+      "@nestjs/microservices",
+      "@nestjs/platform-express"
     ]
   }
 }

@@ -1,7 +1,7 @@
 import { ClientProviderOptions, Transport } from '@nestjs/microservices';
 
 export const CONFIG = {
-  RABBIT_URL: 'amqp://localhost:5672',
+  RABBIT_URL: 'amqp://rabbitmq:5672',
   JOBS_PRODUCER: 'jobs_producer',
   JOBS_CONSUMER: 'jobs_consumer',
 };
