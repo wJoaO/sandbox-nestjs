@@ -5,7 +5,7 @@ Sandbox project with three services configured with containers using docker:
 - NestJS
 - Web static files - (React framework)
 
-Simple backend with a RabbitMQ connection that will manage a queue of jobs in a asyncronous way.
+Simple backend with a RabbitMQ connection that will manage a queue of jobs in a asyncronous way. Simple frontend that connects to the backend and visualize the current jobs and create new ones.
 
 # Dependencies
 
