@@ -39,7 +39,7 @@ export function JobList() {
   };
 
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap ml-2">
       {jobs.map(renderJob)}
       {Array.from(Array(10).keys()).map(renderPhantomElements)}
     </div>

@@ -6,6 +6,6 @@ WORKDIR /home/node
 COPY --chown=node:node . .
 RUN yarn install
 RUN yarn build
-EXPOSE 3000
+EXPOSE 3001
 
-CMD ["yarn", "dist/main.js"]
+CMD ["yarn", "run-server"]

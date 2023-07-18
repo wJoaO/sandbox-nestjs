@@ -23,6 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "run-server": "http-server ./build -p 3001",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "http-server": "^14.1.1",
     "tailwindcss": "^3.3.3"
   }
 }
